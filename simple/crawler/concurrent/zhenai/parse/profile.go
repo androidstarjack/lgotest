@@ -1,8 +1,8 @@
 package parse
 
 import (
-	"com.yuer.gio/lgotest/simple/crawler/engine"
-	"com.yuer.gio/lgotest/simple/crawler/model"
+	"com.yuer.gio/lgotest/simple/crawler/simple/engine"
+	"com.yuer.gio/lgotest/simple/crawler/simple/model"
 	"regexp"
 	"strconv"
 )

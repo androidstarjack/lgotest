@@ -1,7 +1,7 @@
 package parse
 
 import (
-	"com.yuer.gio/lgotest/simple/crawler/fecther"
+	"com.yuer.gio/lgotest/simple/crawler/simple/fecther"
 	"fmt"
 	"testing"
 )

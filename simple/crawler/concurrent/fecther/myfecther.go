@@ -40,11 +40,15 @@ func ParseUrlByUtf8TansferGet(url string) ([] byte,error ){
 	encod ,nReader := tansformGetUtf8(resp.Body)
 	reader := transform.NewReader(nReader,encod.NewEncoder())
 	return ioutil.ReadAll(reader)
-	//if ero != nil{
-	//	panic(ero)
+
+	//data ,erro := ioutil.ReadAll(reader)
+	//if erro != nil{
+	//	panic(erro)
 	//}
-	//fmt.Println(string(data))
+	//fmt.Println("")
+	//fmt.Println("啊啊啊啊啊啊啊啊啊啊啊",string(data))
 	//printCityListdata(data)
+	//return ioutil.ReadAll(reader)
 }
 func ParseUrlByUtf8TansferPost(url string) ([] byte,error ){ //
 

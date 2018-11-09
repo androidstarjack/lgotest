@@ -2,7 +2,7 @@ package main
 
 import (
 	"bufio"
-	"com.yuer.gio/lgotest/simple/crawler/fecther"
+	"com.yuer.gio/lgotest/simple/crawler/simple/fecther"
 	"fmt"
 	"golang.org/x/net/html/charset"
 	"golang.org/x/text/encoding"

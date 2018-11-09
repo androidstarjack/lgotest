@@ -1,8 +1,8 @@
 package main
 
 import (
-	"com.yuer.gio/lgotest/simple/crawler/engine"
-	"com.yuer.gio/lgotest/simple/crawler/zhenai/parse"
+	"com.yuer.gio/lgotest/simple/crawler/simple/engine"
+	"com.yuer.gio/lgotest/simple/crawler/simple/zhenai/parse"
 )
 
 const URL  =  "http://www.zhenai.com/zhenghun"

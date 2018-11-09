@@ -16,8 +16,11 @@ func main() {
 	//	panic(erro)
 	//}
 	fmt.Println(data)*/
+	//var array [] int
+
 	array :=[5]int{0,1,2,3,4}
 	for len(array)>0 {
 		fmt.Println(array)
+		//array = array[1:]
 	}
 }

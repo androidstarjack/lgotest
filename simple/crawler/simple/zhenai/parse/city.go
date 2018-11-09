@@ -1,8 +1,7 @@
 package parse
 
 import (
-	"com.yuer.gio/lgotest/simple/crawler/engine"
-	"fmt"
+	"com.yuer.gio/lgotest/simple/crawler/simple/engine"
 	"regexp"
 )
                   //<a href="http://album.zhenai.com/u/1572218980" target="_blank">安然</a>
@@ -11,7 +10,7 @@ func ParseCity(cotnent [] byte) engine.ParseResult{
 	regexpp := regexp.MustCompile(cityRegexp)
 	result := regexpp.FindAllSubmatch(cotnent,-1)
 	parseRequest := engine.ParseResult{}
-	fmt.Printf("ParseCity： %s",result)
+	//fmt.Printf("ParseCity： %s",result)
 	for _ ,val := range result{
 
 		parseRequest.Items  = append(parseRequest.Items, "user: "+string(val[2])) //用户的名字

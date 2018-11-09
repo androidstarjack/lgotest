@@ -8,7 +8,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 )
-
+//插入
 func insert(db *sql.DB) {
 	stmt, err := db.Prepare("INSERT INTO user(username, password) VALUES(?, ?)")
 	defer stmt.Close()
@@ -24,6 +24,7 @@ func insert(db *sql.DB) {
 var CURRENT_AGE = 20
 var  sex   = "男"
 
+//公共类，检查错误
 func checkError(str  string,err error) bool{
 	if err !=  nil{
 		fmt.Printf(str+" %s \b \n",err.Error())
@@ -48,6 +49,8 @@ func main() {
 	//deleteFromTabCase(db)
 	//dropTab(db)
 }
+
+//删除表
 func dropTab(db *sql.DB) {
 	res ,erro := db.Exec("drop table tb_user")
 	if erro != nil{
@@ -59,6 +62,7 @@ func dropTab(db *sql.DB) {
 	}
 	fmt.Printf("\n删除表成功 ，结果影响的行数是:%d\n",affect)
 }
+//删除表周中数据
 func deleteFromTabCase(db *sql.DB) {
 	 stmt ,err := db.Prepare("delete from tb_user where name = ?")
 	 checkError("根据条件进行删除表",err)
@@ -72,6 +76,7 @@ func deleteFromTabCase(db *sql.DB) {
 	lastId, err := res.LastInsertId()
 	fmt.Printf("affect : %d   lasetId: %d",affect,lastId)
 }
+//更新数据
 func updataFromDb(db *sql.DB) {
 	stmt ,err := db.Prepare("update tb_user set name = ? where name = ?")
 	checkError("查询条件数据库",err)
@@ -84,6 +89,7 @@ func updataFromDb(db *sql.DB) {
 	fmt.Printf("更新的数据：%d",affect)
 }
 
+//查询数据
 func queryFromDb(db *sql.DB) {
 	row, error := db.Query("select * from tb_user")
 
@@ -108,7 +114,7 @@ func queryFromDb(db *sql.DB) {
 
 
 
-
+//增加：既插入数据
 func insertTableContent(db *sql.DB) {
 	//var userId int = utils.GetNowtimeMD5()
 	stmt ,err := db.Prepare("insert   tb_user set id = ?, name = ? ,age = ?, sex = ?,addr = ?,tel=?;")
@@ -127,6 +133,8 @@ func insertTableContent(db *sql.DB) {
 	}
 	fmt.Println("插入数据成功",result)
 }
+
+//创建表
 func createTable(db *sql.DB) {
 	_, err := db.Exec("CREATE TABLE IF NOT EXISTS tb_user(id int(10) primary key,name varchar(20),age int(10),sex varchar(5),addr varchar(64),tel varchar(11));")
 	if err != nil {
@@ -134,27 +142,17 @@ func createTable(db *sql.DB) {
 		return
 	}
 	fmt.Println("创建表成功啦~~")
+	//第二种方式
+	stmt, erro := db.Prepare(userDetail)
+	if erro != nil {
+		panic(erro)
+	}
+
+	_, err = stmt.Exec()
+	if err != nil {
+		panic(err)
+	}
 }
-
-func createDataBase(db *sql.DB) bool{
-	_, err := db.Exec("CREATE DATABASE IF NOT EXISTS my_db;")
-	return checkError("试图创建一个数据库",err)
-}
-
-
-//func userDb(db *sql.DB){
-//	_, err := db.Exec("USE my_db;")
-//	if err != nil {
-//		fmt.Println("select database failed")
-//		return
-//	}
-//}
-
-
-
-
-
-
 
 func main1() {
 	db, err := sql.Open("mysql", "root:yyh123@tcp(10.2.0.215:3306)/test?charset=utf8")

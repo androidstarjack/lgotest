@@ -2,9 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e8bf782-d910-47a5-8b32-0524e0f4e079" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/simple/mysql/db2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/concurrent/crawler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/concurrent/engine/concurrent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/concurrent/engine/simple.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/concurrent/fecther/myfecther.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/concurrent/scheduler/simple.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/city.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/citylist.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/citylist_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/profile.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/simple/engine/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/simple/model/profile.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/citylist.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/gogin/simplegin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/gogin/simplegin_upload.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple/test/changoroutine.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple/mysql/beedb.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/mysql/beedb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/crawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/simple/crawler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/engine/engine.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/simple/engine/engine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/engine/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/concurrent/engine/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/example/crawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/simple/example/crawler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/fecther/myfecther.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/simple/fecther/myfecther.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/model/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/concurrent/model/profile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/regexptext.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/regexptext.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/zhenai/parse/city.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/city.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/zhenai/parse/citylist.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/citylist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/zhenai/parse/citylist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/citylist.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/zhenai/parse/citylist_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/citylist_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/crawler/zhenai/parse/profile.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/profile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple/mysql/db1.go" beforeDir="false" afterPath="$PROJECT_DIR$/simple/mysql/db1.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,22 +49,22 @@
     <session id="-1977061011">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="8" />
-          <entry key="project.open.time.8" value="6" />
+          <entry key="project.open.time.8" value="8" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="257" />
+          <entry key="go" value="325" />
           <entry key="go___jb_tmp___" value="1" />
           <entry key="iml" value="3" />
           <entry key="in" value="3" />
@@ -47,42 +73,42 @@
           <entry key="s" value="1" />
           <entry key="tmpfile" value="4" />
           <entry key="txt" value="7" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="8" />
           <entry key="yuer" value="12" />
           <entry key="yuer2" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="257" />
+          <entry key="Go" value="325" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="Image" value="1" />
           <entry key="JAVA" value="4" />
           <entry key="PLAIN_TEXT" value="30" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="8" />
           <entry key="x86 Plan9 Assembly" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="24873" />
+          <entry key="go" value="27151" />
           <entry key="in" value="42" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="14" />
           <entry key="yuer" value="269" />
           <entry key="yuer2" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="24873" />
+          <entry key="Go" value="27151" />
           <entry key="PLAIN_TEXT" value="324" />
-          <entry key="XML" value="12" />
+          <entry key="XML" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
         <counts>
           <entry key=".append" value="3" />
-          <entry key=".len" value="2" />
+          <entry key=".len" value="5" />
           <entry key=".nil" value="1" />
           <entry key=".notnil" value="1" />
           <entry key=".panic" value="1" />
@@ -98,64 +124,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/mysql/db1.go">
+        <entry file="file://$PROJECT_DIR$/simple/gogin/simplegin.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="36" column="83" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="83" />
-              <folding>
-                <element signature="e#15#134#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/mysql/db2.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-              <folding>
-                <element signature="e#14#133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/mysql/utils/utils.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/database/sql/sql.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="3044" column="4" selection-start-line="3044" selection-start-column="4" selection-end-line="3044" selection-end-column="4" />
+            <state relative-caret-position="247">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/simple/mysql/beedb.go">
+        <entry file="file://$PROJECT_DIR$/simple/gogin/simplegin_upload.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-              <folding>
-                <element signature="e#14#113#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="597">
+              <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../github.com/astaxie/beedb/beedb.go">
+        <entry file="file://C:/Go/src/log/log.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="468" column="9" lean-forward="true" selection-start-line="468" selection-start-column="9" selection-end-line="468" selection-end-column="9" />
+            <state relative-caret-position="191">
+              <caret line="287" selection-start-line="287" selection-end-line="287" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../github.com/gin-gonic/gin/utils.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../github.com/gin-gonic/gin/context.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="779" column="18" selection-start-line="779" selection-start-column="18" selection-end-line="779" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -163,31 +171,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple/upload/uploadfile.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lgotest.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple/tempfile/test.go">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/net/http/request.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24225">
-              <caret line="1296" selection-start-line="1296" selection-end-line="1296" />
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -197,43 +182,43 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="Go Application" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ParseUrlByUtf8Tansfer</find>
-      <find>传过来的参数:seeds的长度</find>
-      <find>Fecthing</find>
-      <find>requests</find>
-      <find>传过来的参数:1</find>
-      <find>http://www.zhenai.com/zhenghun</find>
-      <find>长春</find>
-      <find>ParseCity</find>
-      <find>album.zhenai.com</find>
-      <find>http://album.zhenai.com/u/</find>
-      <find>----------------------&gt;ParseCity</find>
-      <find>http://album.zhenai.com/u/15</find>
-      <find>char</find>
-      <find>ParseFunc</find>
-      <find>result</find>
-      <find>seeds</find>
-      <find>byte</find>
-      <find>结果： -----》</find>
-      <find>login</find>
-      <find>name</find>
-      <find>Form</find>
-      <find>9090</find>
-      <find>method</find>
-      <find>got item data :</find>
-      <find>066</find>
-      <find>0666</find>
-      <find>OpenFile</find>
       <find>tempfile</find>
       <find>FilePath</find>
       <find>Insert</find>
+      <find>ParseUrlByUtf8Tansfer</find>
+      <find>传过来的参数:seeds的长度</find>
+      <find>在不停的运转吗</find>
+      <find>薰衣草</find>
+      <find>打印request的长度</find>
+      <find>结束啦结束啦</find>
+      <find>myfecther</find>
+      <find>打印parseResult信息</find>
+      <find>打印prequests信息</find>
+      <find>执行解析</find>
+      <find>got item data</find>
+      <find>Requests的长度</find>
+      <find>啊啊啊啊啊啊啊啊啊啊啊</find>
+      <find>ParseCityListdata</find>
+      <find>长度</find>
+      <find>做人要懂得感恩</find>
+      <find>这是第 %d 次 执行解析-----解析的结果为</find>
+      <find>雪儿</find>
+      <find>commit</find>
+      <find>Got item city</find>
+      <find>Got item</find>
+      <find>阳</find>
+      <find>ParseCity</find>
+      <find>type</find>
+      <find>genAdd</find>
+      <find>ListenAndServe</find>
+      <find>name</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -246,29 +231,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/filelistingservice/filelisitrng/handler.go" />
-        <option value="$PROJECT_DIR$/tabletest/goway.go" />
-        <option value="$PROJECT_DIR$/tabletest/entry/goway.go" />
-        <option value="$PROJECT_DIR$/tabletest/tb_test.go" />
-        <option value="$PROJECT_DIR$/filelistingservice/errwrap_test.go" />
-        <option value="$PROJECT_DIR$/chaneltest/gochanle/gochant.go" />
-        <option value="$PROJECT_DIR$/chaneltest/gochanle/g2.go" />
-        <option value="$PROJECT_DIR$/httptest/h1.go" />
-        <option value="$PROJECT_DIR$/filelistingservice/fileservice.go" />
-        <option value="$PROJECT_DIR$/simple/migong.in" />
-        <option value="$PROJECT_DIR$/simple/migong/migo.go" />
-        <option value="$PROJECT_DIR$/simple/tempfile/abc.yuer2" />
-        <option value="$PROJECT_DIR$/simple/test/readfiletest.go" />
-        <option value="$PROJECT_DIR$/simple/test/createfile.go" />
-        <option value="$PROJECT_DIR$/simple/test/deletefile.go" />
-        <option value="$PROJECT_DIR$/simple/tempfile/fmt.yuer" />
-        <option value="$PROJECT_DIR$/simple/test/gmtfiletest.go" />
-        <option value="$PROJECT_DIR$/simple/test/constants.go" />
-        <option value="$PROJECT_DIR$/simple/test/writefile.go" />
-        <option value="$PROJECT_DIR$/simple/test/readfile.go" />
         <option value="$PROJECT_DIR$/simple/crawler/zhenai/parse/engine.go" />
         <option value="$PROJECT_DIR$/simple/crawler/engine/types.go" />
-        <option value="$PROJECT_DIR$/simple/crawler/regexptext.go" />
         <option value="$PROJECT_DIR$/simple/crawler/crawler.go" />
         <option value="$PROJECT_DIR$/simple/crawler/zhenai/parse/citylist.xml" />
         <option value="$PROJECT_DIR$/simple/crawler/zhenai/parse/citylist_test.go" />
@@ -293,10 +257,31 @@
         <option value="$PROJECT_DIR$/simple/mysql/dfw.go" />
         <option value="$PROJECT_DIR$/simple/mysql/sf.go" />
         <option value="$PROJECT_DIR$/simple/mysql/utils/utils.go" />
-        <option value="$PROJECT_DIR$/simple/mysql/db1.go" />
         <option value="$PROJECT_DIR$/simple/tempfile/abc.yuer" />
         <option value="$PROJECT_DIR$/simple/mysql/db2.go" />
         <option value="$PROJECT_DIR$/simple/mysql/beedb.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/simple/crawler.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/regexptext.go" />
+        <option value="$PROJECT_DIR$/simple/mysql/db1.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/simple/fecther/myfecther.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/city.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/city.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/citylist_test.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/engine/Conconcurrent.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/engine/Concurrent.go" />
+        <option value="$PROJECT_DIR$/simple/test/chantest.go" />
+        <option value="$PROJECT_DIR$/simple/test/createfile.go" />
+        <option value="$PROJECT_DIR$/simple/test/changoroutine.go" />
+        <option value="$PROJECT_DIR$/simple/scheduler/simple.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/crawler.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/citylist.xml" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/citylist.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/engine/concurrent.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/simple/engine/engine.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/engine/simple.go" />
+        <option value="$PROJECT_DIR$/simple/crawler/concurrent/scheduler/simple.go" />
+        <option value="$PROJECT_DIR$/simple/gogin/simplegin.go" />
+        <option value="$PROJECT_DIR$/simple/gogin/simplegin_upload.go" />
       </list>
     </option>
   </component>
@@ -318,12 +303,33 @@
     <option name="width" value="1400" />
     <option name="height" value="997" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>GeneralGo</id>
+          </State>
+          <State>
+            <id>Go</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>GoInvalidCompositeLiteral</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,50 +340,37 @@
             <path>
               <item name="lgotest" type="b2602c69:ProjectViewProjectNode" />
               <item name="lgotest" type="462c0819:PsiDirectoryNode" />
+              <item name="httptest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lgotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lgotest" type="462c0819:PsiDirectoryNode" />
               <item name="simple" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lgotest" type="b2602c69:ProjectViewProjectNode" />
               <item name="lgotest" type="462c0819:PsiDirectoryNode" />
               <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lgotest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lgotest" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lgotest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lgotest" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lgotest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lgotest" type="462c0819:PsiDirectoryNode" />
-              <item name="tabletest" type="462c0819:PsiDirectoryNode" />
+              <item name="gogin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541500212755" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541741058073" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -386,17 +379,18 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\mysql\utils" />
-      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\upload" />
-      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\crawler\engine" />
-      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\tabletest\entry" />
-      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\retriever" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\crawler\concurrent" />
       <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\crawler\example" />
       <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple" />
       <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\crawler\concurrent" />
+      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\crawler\simple" />
+      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\crawler" />
+      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\mysql\utils" />
+      <recent name="E:\englis_install\go_pro\src\com.yuer.gio\lgotest\simple\upload" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -411,66 +405,66 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build beedb.go">
-    <configuration name="go build beedb.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build simplegin_upload.go">
+    <configuration name="go build changoroutine.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="lgotest" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/simple/mysql/beedb.go" />
+      <filePath value="$PROJECT_DIR$/simple/test/changoroutine.go" />
       <package value="com.yuer.gio/lgotest" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build db1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build crawler.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="lgotest" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/simple/mysql/db1.go" />
+      <filePath value="$PROJECT_DIR$/simple/crawler/concurrent/crawler.go" />
       <package value="com.yuer.gio/lgotest" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build db2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build crawler.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="lgotest" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/simple/mysql/db2.go" />
+      <filePath value="$PROJECT_DIR$/simple/crawler/simple/crawler.go" />
       <package value="com.yuer.gio/lgotest" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build simplegin.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="lgotest" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/simple/tempfile/test.go" />
+      <filePath value="$PROJECT_DIR$/simple/gogin/simplegin.go" />
       <package value="com.yuer.gio/lgotest" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build uploadfile.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build simplegin_upload.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="lgotest" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/simple/upload/uploadfile.go" />
+      <filePath value="$PROJECT_DIR$/simple/gogin/simplegin_upload.go" />
       <package value="com.yuer.gio/lgotest" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build uploadfile.go" />
-      <item itemvalue="Go Build.go build test.go" />
-      <item itemvalue="Go Build.go build db1.go" />
-      <item itemvalue="Go Build.go build beedb.go" />
-      <item itemvalue="Go Build.go build db2.go" />
+      <item itemvalue="Go Build.go build crawler.go" />
+      <item itemvalue="Go Build.go build changoroutine.go" />
+      <item itemvalue="Go Build.go build crawler.go (1)" />
+      <item itemvalue="Go Build.go build simplegin.go" />
+      <item itemvalue="Go Build.go build simplegin_upload.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build beedb.go" />
-        <item itemvalue="Go Build.go build db2.go" />
-        <item itemvalue="Go Build.go build db1.go" />
-        <item itemvalue="Go Build.go build uploadfile.go" />
-        <item itemvalue="Go Build.go build test.go" />
+        <item itemvalue="Go Build.go build simplegin_upload.go" />
+        <item itemvalue="Go Build.go build simplegin.go" />
+        <item itemvalue="Go Build.go build crawler.go (1)" />
+        <item itemvalue="Go Build.go build crawler.go" />
+        <item itemvalue="Go Build.go build changoroutine.go" />
       </list>
     </recent_temporary>
   </component>
@@ -509,6 +503,9 @@
       <workItem from="1541035722638" duration="22607000" />
       <workItem from="1541387365647" duration="6693000" />
       <workItem from="1541478976304" duration="8520000" />
+      <workItem from="1541552143635" duration="26147000" />
+      <workItem from="1541640985710" duration="15084000" />
+      <workItem from="1541723966853" duration="6348000" />
     </task>
     <task id="LOCAL-00001" summary="Golang语法笔记记录">
       <created>1539926224280</created>
@@ -567,7 +564,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309814000" />
+    <option name="totallyTimeSpent" value="357393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -580,10 +577,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8610687" visible="true" weight="0.21055438" />
-      <window_info id="Structure" order="1" sideWeight="0.1389313" side_tool="true" weight="0.15991472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8554534" visible="true" weight="0.32995737" />
+      <window_info id="Structure" order="1" sideWeight="0.14454664" side_tool="true" visible="true" weight="0.32995737" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -591,13 +587,13 @@
       <window_info id="Favorites" order="6" sideWeight="0.5011136" side_tool="true" weight="0.18123667" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.25083613" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.9077825" visible="true" weight="0.2865106" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8821962" weight="0.3411371" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9077825" visible="true" weight="0.1516165" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8821962" weight="0.32998884" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4978678" weight="0.37346712" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6167377" weight="0.31661093" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6167377" weight="0.4214047" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021322" side_tool="true" weight="0.37346712" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.75159913" weight="0.32664436" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -668,7 +664,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/simple/crawler/zhenai/parse/citylist.go</url>
+          <url>file://$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/citylist.go</url>
           <line>10</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -679,8 +675,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/simple/mysql/db1.go</url>
-          <line>51</line>
+          <line>54</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/simple/gogin/simplegin_upload.go</url>
+          <line>33</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -689,221 +690,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chaneltest/gochanle/g2.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chaneltest/gochanle/gochant.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/engine/types.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/engine/engine.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="45" column="49" lean-forward="true" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/zhenai/parse/citylist.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/zhenai/parse/profile.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-371">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/example/crawler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/zhenai/parse/citylist_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="40" column="97" selection-start-line="40" selection-start-column="97" selection-end-line="40" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/zhenai/parse/citylist.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/zhenai/parse/city.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/test/constants.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httptest/h3routine.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/model/profile.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/test/readfiletest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/consts/conscts.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/test/gmtfiletest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/fecther/myfecther.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/tempfile/upload2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/tempfile/abc.yuer2">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/tempfile/fmt2wl.yuer">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/FindFragment.java" />
-    <entry file="file://C:/Go/src/net/http/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="2405" column="39" selection-start-line="2405" selection-start-column="32" selection-end-line="2405" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/tempfile/FindFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/migong.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/botest.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/tempfile/qrcode_for_gh_29a99441b781_258.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/mysql/db1.go___jb_tmp___" />
-    <entry file="file://C:/Go/src/io/io.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6840">
-          <caret line="362" selection-start-line="362" selection-end-line="362" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/fmt/print.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3382">
-          <caret line="185" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/os/file.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5187">
-          <caret line="281" selection-start-line="281" selection-end-line="281" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httptest/simpleLogin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/mysql/dfw.go" />
-    <entry file="file://$PROJECT_DIR$/simple/mysql/sf.go" />
-    <entry file="file://$PROJECT_DIR$/functional/fbnctest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httptest/h2.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httptest/h1.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple/migong/migo.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/crawler/crawler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -928,6 +718,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simple/mysql/utils/utils.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/database/sql/sql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57589">
+          <caret line="3044" column="4" selection-start-line="3044" selection-start-column="4" selection-end-line="3044" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/astaxie/beedb/beedb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8740">
+          <caret line="468" column="9" selection-start-line="468" selection-start-column="9" selection-end-line="468" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lgotest.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -945,61 +756,265 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/upload/uploadfile.go">
+    <entry file="file://$PROJECT_DIR$/simple/mysql/beedb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+          <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <caret line="73" column="19" lean-forward="true" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+          <caret line="72" column="63" lean-forward="true" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
+          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/regexptext.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/simple/model/profile.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/citylist.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/mysql/db2.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <caret line="32" column="5" lean-forward="true" selection-start-line="24" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple/mysql/db1.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="36" column="83" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="83" />
+        <state relative-caret-position="1360">
+          <caret line="165" column="22" lean-forward="true" selection-start-line="165" selection-start-column="22" selection-end-line="165" selection-end-column="22" />
           <folding>
             <element signature="e#15#134#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Go/src/database/sql/sql.go">
+    <entry file="file://$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/citylist.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="3044" column="4" selection-start-line="3044" selection-start-column="4" selection-end-line="3044" selection-end-column="4" />
+        <state relative-caret-position="95">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/mysql/utils/utils.go">
+    <entry file="file://$PROJECT_DIR$/simple/crawler/simple/zhenai/parse/city.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="399">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../github.com/astaxie/beedb/beedb.go">
+    <entry file="file://$PROJECT_DIR$/simple/crawler/simple/fecther/myfecther.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="468" column="9" lean-forward="true" selection-start-line="468" selection-start-column="9" selection-end-line="468" selection-end-column="9" />
+        <state relative-caret-position="314">
+          <caret line="81" column="61" lean-forward="true" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/mysql/db2.go">
+    <entry file="file://$PROJECT_DIR$/simple/crawler/simple/engine/types.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#133#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple/mysql/beedb.go">
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/example/crawler.go" />
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/profile.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/simple/example/crawler.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-          <folding>
-            <element signature="e#14#113#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="361">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/test/chantest.go" />
+    <entry file="file://$PROJECT_DIR$/tabletest/tb_test.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/test/constants.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/test/createfile.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/test/changoroutine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/model/profile.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/fecther/myfecther.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/citylist.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/simple/engine/engine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/simple/crawler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/engine/simple.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/engine/concurrent.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/crawler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/citylist_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/citylist.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/engine/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filelistingservice/fileservice.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/zhenai/parse/city.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/crawler/concurrent/scheduler/simple.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/httptest/h3routine.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/httptest/simpleLogin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/httptest/h2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/gogin/simplegin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/upload/uploadfile.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/gin-gonic/gin/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="779" column="18" selection-start-line="779" selection-start-column="18" selection-end-line="779" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../github.com/gin-gonic/gin/utils.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/log/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="287" selection-start-line="287" selection-end-line="287" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/gogin/simplegin_upload.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
         </state>
       </provider>
     </entry>
